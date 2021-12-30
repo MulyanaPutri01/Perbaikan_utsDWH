@@ -1,0 +1,27 @@
+Nama	: Mulyana Putriyani
+NIM	: 19090113
+Kelas	: 5B
+
+
+----------------------------------------------------------
+1. Import Database Classismodels ke dalam localhost
+2. Desain Database dimensi sesuai Kebutuhan yang diinginkan mengacu kepada database classicmodels
+   yaitu :
+	- Tabel dimensi customers, yang mengambil data dari tabel customers yaitu customerNumber,customerName, city, dan country.
+	- Tabel dimensi employees, yang mengambil data dari tabel employees yaiut employeeNumber, firstName, lastName, jobTitle, city, dan country.
+	- Tabel dimensi product, yang mengambil data dari tabel product yaitu productCode, productName, productLine, quantityOrdered, quantityInStock. 
+	  pada tabel product dengan join tabel ordersdetails, dengan mengambil data orderdetails dengan quantityOrdered
+	- Tabel dimensi time, membuat data id, tahun, bulan, dan tanggal
+	- Tabel fakta, dengan mengabungkan semua tabel dimensi yag sudah dibuat
+	  - customer_sc, amount, emp_sc, product_sc, dan time_sc
+3. Buat database dari desain dimensi yang sudah dibuat ke localhost 
+4. Setelah Database di import buat Transformation, dengan mengacu pada data desain dimensi ynag telah dibuat, yaitu :
+	- trans_customers
+	- trans_employees
+	- trans_product
+	- trans_time
+	- fakta
+4. Koneksikan Pentaho Ke dalam database phpmyadmin dengan tujuan Mengakses File Database " ClassicModels" dan database dwh_uts
+5. Tabel Input 	  : digunakan untuk mengambil sebuah data atau nilai di dalam database 
+   Add Sequence	  : Proses Penambahan sebuah data berdasarkan ID 
+   Insert/update  : Proses Penambahan data yang tadinya di dalam sumber data asli
